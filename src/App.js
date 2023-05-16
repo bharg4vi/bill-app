@@ -14,11 +14,12 @@ const App = () => {
   const spinner = document.getElementById("spinner");
   const [loading, setLoading] = React.useState(true);
 
-  if (spinner) {
+  if (spinner) 
+  {
     setTimeout(() => {
       spinner.style.display = "none";
       setLoading(false);
-    }, 2000);
+    }, 3000);
   }
   return (
     !loading && (
